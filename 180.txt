@@ -6,3 +6,12 @@ JOIN Logs l3
 ON l2.id = l3.id - 1
 WHERE l1.num = l2.num
 AND l2.num = l3.num;
+
+
+
+// 181
+SELECT e1.name AS Employee
+FROM Employee e1
+JOIN Employee e2
+ON e1.managerId = e2.id
+WHERE e1.salary > e2.salary;
