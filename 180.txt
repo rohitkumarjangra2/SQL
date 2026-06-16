@@ -17,7 +17,7 @@ ON e1.managerId = e2.id
 WHERE e1.salary > e2.salary;
 
 // 182
-SELECT email AS Email
+SELECT email AS Email1
 FROM Person
 GROUP BY email
 HAVING COUNT(email) > 1;
