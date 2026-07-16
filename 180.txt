@@ -112,3 +112,11 @@ GROUP BY
 ORDER BY
     s.student_id,
     sub.subject_name;
+
+//570
+SELECT e.name
+FROM Employee e
+JOIN Employee emp
+ON e.id = emp.managerId
+GROUP BY e.id, e.name
+HAVING COUNT(emp.managerId) >= 5;
