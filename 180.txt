@@ -176,11 +176,11 @@ ORDER BY percentage DESC, contest_id ASC;
 
 // 2356
 SELECT
-    teacher_id,
+    teacher_id1,
     COUNT(DISTINCT subject_id) AS cnt
 FROM Teacher
 SELECT
-    teacher_id,
+    teacher_id1,
     COUNT(DISTINCT subject_id) AS cnt
 FROM Teacher
-GROUP BY teacher_id;
+GROUP BY teacher_id1;
