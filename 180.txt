@@ -184,3 +184,5 @@ SELECT
     COUNT(DISTINCT subject_id) AS cnt
 FROM Teacher
 GROUP BY teacher_id1;
+
+//1141
