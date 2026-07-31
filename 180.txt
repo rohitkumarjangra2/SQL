@@ -210,3 +210,10 @@ JOIN (
 ) t
 ON s.product_id = t.product_id
 AND s.year = t.year;
+
+//596
+SELECT
+    class
+FROM Courses
+GROUP BY class
+HAVING COUNT(student) >= 5;
