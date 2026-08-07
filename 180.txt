@@ -248,3 +248,17 @@ HAVING COUNT(DISTINCT product_key) = (
     SELECT COUNT(*)
     FROM Product
 );
+
+//1789
+SELECT
+    employee_id,
+    department_id
+FROM Employee
+WHERE primary_flag = 'Y'
+   OR employee_id IN (
+        SELECT employee_id
+        FROM Employee
+        GROUP BY employee_id
+        HAVING COUNT(*) = 1
+   );
+
